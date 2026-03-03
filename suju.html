@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Sujata 💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive;
+            background: linear-gradient(to right, #fceaff, #e0f7ff);
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 120px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: #ff66b2;
+        }
+
+        p {
+            font-size: 22px;
+            color: #444;
+            width: 65%;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        .sparkle {
+            font-size: 35px;
+            animation: float 2s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #ff99cc;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff66b2;
+        }
+
+        .hidden-message {
+            display: none;
+            margin-top: 25px;
+            font-size: 20px;
+            color: #663399;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sparkle">✨🌸✨</div>
+        <h1>Sujata, This is For You 💖</h1>
+
+        <p>
+            I just want you to know how strong, talented, and beautiful you are inside and out.  
+            You are capable of achieving anything you dream of.  
+            Never doubt yourself,and will always believe in you. 🌷
+        </p>
+
+        <button onclick="showMessage()">Click Me 💌</button>
+
+        <div class="hidden-message" id="surprise">
+            Go chase your dreams fearlessly.  
+            Do your best in everything you do.  
+            The world is waiting for your magic ✨  
+            I’m always proud of you 💕
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
